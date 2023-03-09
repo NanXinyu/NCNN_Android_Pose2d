@@ -1,0 +1,5 @@
+ninja: Entering directory `D:\ncnn_pose2d\app\.cxx\cmake\debug\x86_64'
+[1/4] Building CXX object CMakeFiles/ncnnbodypose.dir/ndkcamera.cpp.o
+[2/4] Building CXX object CMakeFiles/ncnnbodypose.dir/posedet.cpp.o
+[3/4] Building CXX object CMakeFiles/ncnnbodypose.dir/posedetncnn.cpp.o
+[4/4] Linking CXX shared library libncnnbodypose.so

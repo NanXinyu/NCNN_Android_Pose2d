@@ -1,0 +1,7 @@
+Executable : D:\AS\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\ml\single_pose2d\app\.cxx\cmake\debug\arm64-v8a
+ncnnbodypose
+jvmArgs : 
+

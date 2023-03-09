@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ml\\single_pose2d\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\ml\\single_pose2d\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "7,3,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "243,109,57",
+                        "endLines": "10,6,2",
+                        "endColumns": "19,19,50",
+                        "endOffsets": "350,237,103"
+                    },
+                    "to": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,164,294",
+                        "endLines": "5,9,10",
+                        "endColumns": "19,19,50",
+                        "endOffsets": "159,289,340"
+                    }
+                }
+            ]
+        }
+    ]
+}

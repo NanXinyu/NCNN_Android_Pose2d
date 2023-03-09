@@ -1,0 +1,3 @@
+ninja: Entering directory `D:\ncnn_pose2d\app\.cxx\cmake\debug\arm64-v8a'
+[1/2] Building CXX object CMakeFiles/ncnnbodypose.dir/posedet.cpp.o
+[2/2] Linking CXX shared library libncnnbodypose.so

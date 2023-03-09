@@ -1,0 +1,266 @@
+7767517
+264 315
+Input                    input                    0 1 input
+Convolution              Conv_0                   1 1 input 418 0=32 1=3 3=2 4=1 5=1 6=864 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_3                   1 1 418 421 0=32 1=3 4=1 5=1 6=288 7=32 9=1
+Split                    splitncnn_0              1 3 421 421_splitncnn_0 421_splitncnn_1 421_splitncnn_2
+Pooling                  AveragePool_7            1 1 421_splitncnn_2 424 0=1 1=96 11=1 2=96 12=1 5=1
+Pooling                  AveragePool_8            1 1 421_splitncnn_1 425 0=1 1=1 11=128 12=128 5=1
+Permute                  Transpose_9              1 1 425 426 0=1
+Concat                   Concat_10                2 1 424 426 427 0=1
+Convolution              Conv_11                  1 1 427 431 0=8 1=1 5=1 6=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_1              1 2 431 431_splitncnn_0 431_splitncnn_1
+Crop                     Slice_20                 1 1 431_splitncnn_1 438 -23309=1,0 -23310=1,128 -23311=1,1
+Crop                     Slice_22                 1 1 431_splitncnn_0 440 -23309=1,128 -23310=1,224 -23311=1,1
+Permute                  Transpose_23             1 1 440 441 0=1
+Convolution              Conv_24                  1 1 438 443 0=32 1=1 5=1 6=256 9=4
+Convolution              Conv_26                  1 1 441 445 0=32 1=1 5=1 6=256 9=4
+BinaryOp                 Mul_28                   2 1 421_splitncnn_0 445 446 0=2
+BinaryOp                 Mul_29                   2 1 446 443 447 0=2
+Convolution              Conv_30                  1 1 447 952 0=16 1=1 5=1 6=512
+Convolution              Conv_31                  1 1 952 452 0=96 1=1 5=1 6=1536 9=1
+ConvolutionDepthWise     Conv_33                  1 1 452 455 0=96 1=3 3=2 4=1 5=1 6=864 7=96 9=1
+Split                    splitncnn_2              1 3 455 455_splitncnn_0 455_splitncnn_1 455_splitncnn_2
+Pooling                  AveragePool_37           1 1 455_splitncnn_2 458 0=1 1=48 11=1 2=48 12=1 5=1
+Pooling                  AveragePool_38           1 1 455_splitncnn_1 459 0=1 1=1 11=64 12=64 5=1
+Permute                  Transpose_39             1 1 459 460 0=1
+Concat                   Concat_40                2 1 458 460 461 0=1
+Convolution              Conv_41                  1 1 461 465 0=8 1=1 5=1 6=768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_3              1 2 465 465_splitncnn_0 465_splitncnn_1
+Crop                     Slice_50                 1 1 465_splitncnn_1 472 -23309=1,0 -23310=1,64 -23311=1,1
+Crop                     Slice_52                 1 1 465_splitncnn_0 474 -23309=1,64 -23310=1,112 -23311=1,1
+Permute                  Transpose_53             1 1 474 475 0=1
+Convolution              Conv_54                  1 1 472 477 0=96 1=1 5=1 6=768 9=4
+Convolution              Conv_56                  1 1 475 479 0=96 1=1 5=1 6=768 9=4
+BinaryOp                 Mul_58                   2 1 455_splitncnn_0 479 480 0=2
+BinaryOp                 Mul_59                   2 1 480 477 481 0=2
+Convolution              Conv_60                  1 1 481 964 0=24 1=1 5=1 6=2304
+Split                    splitncnn_4              1 2 964 964_splitncnn_0 964_splitncnn_1
+Convolution              Conv_61                  1 1 964_splitncnn_1 487 0=144 1=1 5=1 6=3456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_64                  1 1 487 491 0=144 1=3 4=1 5=1 6=1296 7=144 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_5              1 3 491 491_splitncnn_0 491_splitncnn_1 491_splitncnn_2
+Pooling                  AveragePool_69           1 1 491_splitncnn_2 494 0=1 1=48 11=1 2=48 12=1 5=1
+Pooling                  AveragePool_70           1 1 491_splitncnn_1 495 0=1 1=1 11=64 12=64 5=1
+Permute                  Transpose_71             1 1 495 496 0=1
+Concat                   Concat_72                2 1 494 496 497 0=1
+Convolution              Conv_73                  1 1 497 501 0=16 1=1 5=1 6=2304 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_6              1 2 501 501_splitncnn_0 501_splitncnn_1
+Crop                     Slice_82                 1 1 501_splitncnn_1 508 -23309=1,0 -23310=1,64 -23311=1,1
+Crop                     Slice_84                 1 1 501_splitncnn_0 510 -23309=1,64 -23310=1,112 -23311=1,1
+Permute                  Transpose_85             1 1 510 511 0=1
+Convolution              Conv_86                  1 1 508 513 0=144 1=1 5=1 6=2304 9=4
+Convolution              Conv_88                  1 1 511 515 0=144 1=1 5=1 6=2304 9=4
+BinaryOp                 Mul_90                   2 1 491_splitncnn_0 515 516 0=2
+BinaryOp                 Mul_91                   2 1 516 513 517 0=2
+Convolution              Conv_92                  1 1 517 976 0=24 1=1 5=1 6=3456
+BinaryOp                 Add_93                   2 1 976 964_splitncnn_0 520
+Convolution              Conv_94                  1 1 520 524 0=144 1=1 5=1 6=3456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_97                  1 1 524 528 0=144 1=3 3=2 4=1 5=1 6=1296 7=144 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_7              1 3 528 528_splitncnn_0 528_splitncnn_1 528_splitncnn_2
+Pooling                  AveragePool_102          1 1 528_splitncnn_2 531 0=1 1=24 11=1 2=24 12=1 5=1
+Pooling                  AveragePool_103          1 1 528_splitncnn_1 532 0=1 1=1 11=32 12=32 5=1
+Permute                  Transpose_104            1 1 532 533 0=1
+Concat                   Concat_105               2 1 531 533 534 0=1
+Convolution              Conv_106                 1 1 534 538 0=16 1=1 5=1 6=2304 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_8              1 2 538 538_splitncnn_0 538_splitncnn_1
+Crop                     Slice_115                1 1 538_splitncnn_1 545 -23309=1,0 -23310=1,32 -23311=1,1
+Crop                     Slice_117                1 1 538_splitncnn_0 547 -23309=1,32 -23310=1,56 -23311=1,1
+Permute                  Transpose_118            1 1 547 548 0=1
+Convolution              Conv_119                 1 1 545 550 0=144 1=1 5=1 6=2304 9=4
+Convolution              Conv_121                 1 1 548 552 0=144 1=1 5=1 6=2304 9=4
+BinaryOp                 Mul_123                  2 1 528_splitncnn_0 552 553 0=2
+BinaryOp                 Mul_124                  2 1 553 550 554 0=2
+Convolution              Conv_125                 1 1 554 988 0=32 1=1 5=1 6=4608
+Split                    splitncnn_9              1 2 988 988_splitncnn_0 988_splitncnn_1
+Convolution              Conv_126                 1 1 988_splitncnn_1 560 0=192 1=1 5=1 6=6144 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_129                 1 1 560 564 0=192 1=3 4=1 5=1 6=1728 7=192 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_10             1 3 564 564_splitncnn_0 564_splitncnn_1 564_splitncnn_2
+Pooling                  AveragePool_134          1 1 564_splitncnn_2 567 0=1 1=24 11=1 2=24 12=1 5=1
+Pooling                  AveragePool_135          1 1 564_splitncnn_1 568 0=1 1=1 11=32 12=32 5=1
+Permute                  Transpose_136            1 1 568 569 0=1
+Concat                   Concat_137               2 1 567 569 570 0=1
+Convolution              Conv_138                 1 1 570 574 0=16 1=1 5=1 6=3072 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_11             1 2 574 574_splitncnn_0 574_splitncnn_1
+Crop                     Slice_147                1 1 574_splitncnn_1 581 -23309=1,0 -23310=1,32 -23311=1,1
+Crop                     Slice_149                1 1 574_splitncnn_0 583 -23309=1,32 -23310=1,56 -23311=1,1
+Permute                  Transpose_150            1 1 583 584 0=1
+Convolution              Conv_151                 1 1 581 586 0=192 1=1 5=1 6=3072 9=4
+Convolution              Conv_153                 1 1 584 588 0=192 1=1 5=1 6=3072 9=4
+BinaryOp                 Mul_155                  2 1 564_splitncnn_0 588 589 0=2
+BinaryOp                 Mul_156                  2 1 589 586 590 0=2
+Convolution              Conv_157                 1 1 590 1000 0=32 1=1 5=1 6=6144
+BinaryOp                 Add_158                  2 1 1000 988_splitncnn_0 593
+Split                    splitncnn_12             1 2 593 593_splitncnn_0 593_splitncnn_1
+Convolution              Conv_159                 1 1 593_splitncnn_1 597 0=192 1=1 5=1 6=6144 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_162                 1 1 597 601 0=192 1=3 4=1 5=1 6=1728 7=192 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_13             1 3 601 601_splitncnn_0 601_splitncnn_1 601_splitncnn_2
+Pooling                  AveragePool_167          1 1 601_splitncnn_2 604 0=1 1=24 11=1 2=24 12=1 5=1
+Pooling                  AveragePool_168          1 1 601_splitncnn_1 605 0=1 1=1 11=32 12=32 5=1
+Permute                  Transpose_169            1 1 605 606 0=1
+Concat                   Concat_170               2 1 604 606 607 0=1
+Convolution              Conv_171                 1 1 607 611 0=16 1=1 5=1 6=3072 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_14             1 2 611 611_splitncnn_0 611_splitncnn_1
+Crop                     Slice_180                1 1 611_splitncnn_1 618 -23309=1,0 -23310=1,32 -23311=1,1
+Crop                     Slice_182                1 1 611_splitncnn_0 620 -23309=1,32 -23310=1,56 -23311=1,1
+Permute                  Transpose_183            1 1 620 621 0=1
+Convolution              Conv_184                 1 1 618 623 0=192 1=1 5=1 6=3072 9=4
+Convolution              Conv_186                 1 1 621 625 0=192 1=1 5=1 6=3072 9=4
+BinaryOp                 Mul_188                  2 1 601_splitncnn_0 625 626 0=2
+BinaryOp                 Mul_189                  2 1 626 623 627 0=2
+Convolution              Conv_190                 1 1 627 1012 0=32 1=1 5=1 6=6144
+BinaryOp                 Add_191                  2 1 1012 593_splitncnn_0 630
+Convolution              Conv_192                 1 1 630 634 0=192 1=1 5=1 6=6144 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_195                 1 1 634 638 0=192 1=3 3=2 4=1 5=1 6=1728 7=192 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_15             1 3 638 638_splitncnn_0 638_splitncnn_1 638_splitncnn_2
+Pooling                  AveragePool_200          1 1 638_splitncnn_2 641 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_201          1 1 638_splitncnn_1 642 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_202            1 1 642 643 0=1
+Concat                   Concat_203               2 1 641 643 644 0=1
+Convolution              Conv_204                 1 1 644 648 0=16 1=1 5=1 6=3072 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_16             1 2 648 648_splitncnn_0 648_splitncnn_1
+Crop                     Slice_213                1 1 648_splitncnn_1 655 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_215                1 1 648_splitncnn_0 657 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_216            1 1 657 658 0=1
+Convolution              Conv_217                 1 1 655 660 0=192 1=1 5=1 6=3072 9=4
+Convolution              Conv_219                 1 1 658 662 0=192 1=1 5=1 6=3072 9=4
+BinaryOp                 Mul_221                  2 1 638_splitncnn_0 662 663 0=2
+BinaryOp                 Mul_222                  2 1 663 660 664 0=2
+Convolution              Conv_223                 1 1 664 1024 0=64 1=1 5=1 6=12288
+Split                    splitncnn_17             1 2 1024 1024_splitncnn_0 1024_splitncnn_1
+Convolution              Conv_224                 1 1 1024_splitncnn_1 670 0=384 1=1 5=1 6=24576 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_227                 1 1 670 674 0=384 1=3 4=1 5=1 6=3456 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_18             1 3 674 674_splitncnn_0 674_splitncnn_1 674_splitncnn_2
+Pooling                  AveragePool_232          1 1 674_splitncnn_2 677 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_233          1 1 674_splitncnn_1 678 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_234            1 1 678 679 0=1
+Concat                   Concat_235               2 1 677 679 680 0=1
+Convolution              Conv_236                 1 1 680 684 0=24 1=1 5=1 6=9216 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_19             1 2 684 684_splitncnn_0 684_splitncnn_1
+Crop                     Slice_245                1 1 684_splitncnn_1 691 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_247                1 1 684_splitncnn_0 693 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_248            1 1 693 694 0=1
+Convolution              Conv_249                 1 1 691 696 0=384 1=1 5=1 6=9216 9=4
+Convolution              Conv_251                 1 1 694 698 0=384 1=1 5=1 6=9216 9=4
+BinaryOp                 Mul_253                  2 1 674_splitncnn_0 698 699 0=2
+BinaryOp                 Mul_254                  2 1 699 696 700 0=2
+Convolution              Conv_255                 1 1 700 1036 0=64 1=1 5=1 6=24576
+BinaryOp                 Add_256                  2 1 1036 1024_splitncnn_0 703
+Split                    splitncnn_20             1 2 703 703_splitncnn_0 703_splitncnn_1
+Convolution              Conv_257                 1 1 703_splitncnn_1 707 0=384 1=1 5=1 6=24576 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_260                 1 1 707 711 0=384 1=3 4=1 5=1 6=3456 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_21             1 3 711 711_splitncnn_0 711_splitncnn_1 711_splitncnn_2
+Pooling                  AveragePool_265          1 1 711_splitncnn_2 714 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_266          1 1 711_splitncnn_1 715 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_267            1 1 715 716 0=1
+Concat                   Concat_268               2 1 714 716 717 0=1
+Convolution              Conv_269                 1 1 717 721 0=24 1=1 5=1 6=9216 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_22             1 2 721 721_splitncnn_0 721_splitncnn_1
+Crop                     Slice_278                1 1 721_splitncnn_1 728 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_280                1 1 721_splitncnn_0 730 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_281            1 1 730 731 0=1
+Convolution              Conv_282                 1 1 728 733 0=384 1=1 5=1 6=9216 9=4
+Convolution              Conv_284                 1 1 731 735 0=384 1=1 5=1 6=9216 9=4
+BinaryOp                 Mul_286                  2 1 711_splitncnn_0 735 736 0=2
+BinaryOp                 Mul_287                  2 1 736 733 737 0=2
+Convolution              Conv_288                 1 1 737 1048 0=64 1=1 5=1 6=24576
+BinaryOp                 Add_289                  2 1 1048 703_splitncnn_0 740
+Split                    splitncnn_23             1 2 740 740_splitncnn_0 740_splitncnn_1
+Convolution              Conv_290                 1 1 740_splitncnn_1 744 0=384 1=1 5=1 6=24576 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_293                 1 1 744 748 0=384 1=3 4=1 5=1 6=3456 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_24             1 3 748 748_splitncnn_0 748_splitncnn_1 748_splitncnn_2
+Pooling                  AveragePool_298          1 1 748_splitncnn_2 751 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_299          1 1 748_splitncnn_1 752 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_300            1 1 752 753 0=1
+Concat                   Concat_301               2 1 751 753 754 0=1
+Convolution              Conv_302                 1 1 754 758 0=24 1=1 5=1 6=9216 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_25             1 2 758 758_splitncnn_0 758_splitncnn_1
+Crop                     Slice_311                1 1 758_splitncnn_1 765 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_313                1 1 758_splitncnn_0 767 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_314            1 1 767 768 0=1
+Convolution              Conv_315                 1 1 765 770 0=384 1=1 5=1 6=9216 9=4
+Convolution              Conv_317                 1 1 768 772 0=384 1=1 5=1 6=9216 9=4
+BinaryOp                 Mul_319                  2 1 748_splitncnn_0 772 773 0=2
+BinaryOp                 Mul_320                  2 1 773 770 774 0=2
+Convolution              Conv_321                 1 1 774 1060 0=64 1=1 5=1 6=24576
+BinaryOp                 Add_322                  2 1 1060 740_splitncnn_0 777
+Convolution              Conv_323                 1 1 777 781 0=384 1=1 5=1 6=24576 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_326                 1 1 781 785 0=384 1=3 4=1 5=1 6=3456 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_26             1 3 785 785_splitncnn_0 785_splitncnn_1 785_splitncnn_2
+Pooling                  AveragePool_331          1 1 785_splitncnn_2 788 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_332          1 1 785_splitncnn_1 789 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_333            1 1 789 790 0=1
+Concat                   Concat_334               2 1 788 790 791 0=1
+Convolution              Conv_335                 1 1 791 795 0=24 1=1 5=1 6=9216 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_27             1 2 795 795_splitncnn_0 795_splitncnn_1
+Crop                     Slice_344                1 1 795_splitncnn_1 802 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_346                1 1 795_splitncnn_0 804 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_347            1 1 804 805 0=1
+Convolution              Conv_348                 1 1 802 807 0=384 1=1 5=1 6=9216 9=4
+Convolution              Conv_350                 1 1 805 809 0=384 1=1 5=1 6=9216 9=4
+BinaryOp                 Mul_352                  2 1 785_splitncnn_0 809 810 0=2
+BinaryOp                 Mul_353                  2 1 810 807 811 0=2
+Convolution              Conv_354                 1 1 811 1072 0=96 1=1 5=1 6=36864
+Split                    splitncnn_28             1 2 1072 1072_splitncnn_0 1072_splitncnn_1
+Convolution              Conv_355                 1 1 1072_splitncnn_1 817 0=576 1=1 5=1 6=55296 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_358                 1 1 817 821 0=576 1=3 4=1 5=1 6=5184 7=576 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_29             1 3 821 821_splitncnn_0 821_splitncnn_1 821_splitncnn_2
+Pooling                  AveragePool_363          1 1 821_splitncnn_2 824 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_364          1 1 821_splitncnn_1 825 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_365            1 1 825 826 0=1
+Concat                   Concat_366               2 1 824 826 827 0=1
+Convolution              Conv_367                 1 1 827 831 0=40 1=1 5=1 6=23040 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_30             1 2 831 831_splitncnn_0 831_splitncnn_1
+Crop                     Slice_376                1 1 831_splitncnn_1 838 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_378                1 1 831_splitncnn_0 840 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_379            1 1 840 841 0=1
+Convolution              Conv_380                 1 1 838 843 0=576 1=1 5=1 6=23040 9=4
+Convolution              Conv_382                 1 1 841 845 0=576 1=1 5=1 6=23040 9=4
+BinaryOp                 Mul_384                  2 1 821_splitncnn_0 845 846 0=2
+BinaryOp                 Mul_385                  2 1 846 843 847 0=2
+Convolution              Conv_386                 1 1 847 1084 0=96 1=1 5=1 6=55296
+BinaryOp                 Add_387                  2 1 1084 1072_splitncnn_0 850
+Split                    splitncnn_31             1 2 850 850_splitncnn_0 850_splitncnn_1
+Convolution              Conv_388                 1 1 850_splitncnn_1 854 0=576 1=1 5=1 6=55296 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_391                 1 1 854 858 0=576 1=3 4=1 5=1 6=5184 7=576 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_32             1 3 858 858_splitncnn_0 858_splitncnn_1 858_splitncnn_2
+Pooling                  AveragePool_396          1 1 858_splitncnn_2 861 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_397          1 1 858_splitncnn_1 862 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_398            1 1 862 863 0=1
+Concat                   Concat_399               2 1 861 863 864 0=1
+Convolution              Conv_400                 1 1 864 868 0=40 1=1 5=1 6=23040 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_33             1 2 868 868_splitncnn_0 868_splitncnn_1
+Crop                     Slice_409                1 1 868_splitncnn_1 875 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_411                1 1 868_splitncnn_0 877 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_412            1 1 877 878 0=1
+Convolution              Conv_413                 1 1 875 880 0=576 1=1 5=1 6=23040 9=4
+Convolution              Conv_415                 1 1 878 882 0=576 1=1 5=1 6=23040 9=4
+BinaryOp                 Mul_417                  2 1 858_splitncnn_0 882 883 0=2
+BinaryOp                 Mul_418                  2 1 883 880 884 0=2
+Convolution              Conv_419                 1 1 884 1096 0=96 1=1 5=1 6=55296
+BinaryOp                 Add_420                  2 1 1096 850_splitncnn_0 887
+Convolution              Conv_421                 1 1 887 891 0=576 1=1 5=1 6=55296 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     Conv_424                 1 1 891 895 0=576 1=5 4=2 5=1 6=14400 7=576 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_34             1 3 895 895_splitncnn_0 895_splitncnn_1 895_splitncnn_2
+Pooling                  AveragePool_429          1 1 895_splitncnn_2 898 0=1 1=12 11=1 2=12 12=1 5=1
+Pooling                  AveragePool_430          1 1 895_splitncnn_1 899 0=1 1=1 11=16 12=16 5=1
+Permute                  Transpose_431            1 1 899 900 0=1
+Concat                   Concat_432               2 1 898 900 901 0=1
+Convolution              Conv_433                 1 1 901 905 0=40 1=1 5=1 6=23040 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_35             1 2 905 905_splitncnn_0 905_splitncnn_1
+Crop                     Slice_442                1 1 905_splitncnn_1 912 -23309=1,0 -23310=1,16 -23311=1,1
+Crop                     Slice_444                1 1 905_splitncnn_0 914 -23309=1,16 -23310=1,28 -23311=1,1
+Permute                  Transpose_445            1 1 914 915 0=1
+Convolution              Conv_446                 1 1 912 917 0=576 1=1 5=1 6=23040 9=4
+Convolution              Conv_448                 1 1 915 919 0=576 1=1 5=1 6=23040 9=4
+BinaryOp                 Mul_450                  2 1 895_splitncnn_0 919 920 0=2
+BinaryOp                 Mul_451                  2 1 920 917 921 0=2
+Convolution              Conv_452                 1 1 921 1108 0=160 1=1 5=1 6=92160
+Convolution              Conv_453                 1 1 1108 925 0=17 1=1 5=1 6=2720 9=1
+Reshape                  Reshape_462              1 1 925 933 0=-1 1=17
+Permute                  Transpose_463            1 1 933 934 0=1
+Convolution1D            Conv_464                 1 1 934 936 0=1024 1=1 5=1 6=196608 9=1
+Split                    splitncnn_36             1 2 936 936_splitncnn_0 936_splitncnn_1
+Convolution1D            Conv_466                 1 1 936_splitncnn_1 938 0=256 1=1 5=1 6=262144 9=1
+Permute                  Transpose_468            1 1 938 output1 0=1
+Convolution1D            Conv_469                 1 1 936_splitncnn_0 941 0=192 1=1 5=1 6=196608 9=1
+Permute                  Transpose_471            1 1 941 output0 0=1

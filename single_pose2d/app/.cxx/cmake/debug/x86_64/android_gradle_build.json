@@ -1,0 +1,64 @@
+{
+  "stringTable": {
+    "0": "D:/ncnn_pose2d/app/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android24 --gcc-toolchain=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dncnnbodypose_EXPORTS -isystem D:/ncnn_pose2d/app/src/main/jni/ncnn-20230223-android-vulkan/x86_64/include/ncnn -isystem D:/ncnn_pose2d/app/src/main/jni/opencv-mobile-4.6.0-android/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -fno-rtti -fno-exceptions -std=gnu++11"
+  },
+  "buildFiles": [
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\platforms.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-config-version.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-targets.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnn.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVModules-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-targets-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVModules.cmake",
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\android.toolchain.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig-version.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-config.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "ncnnbodypose-Debug-x86_64": {
+      "buildCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" ncnnbodypose",
+      "buildType": "debug",
+      "toolchain": "3136028522",
+      "abi": "x86_64",
+      "artifactName": "ncnnbodypose",
+      "files": [
+        {
+          "src": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedetncnn.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedet.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ndkcamera.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\\libncnnbodypose.so"
+    }
+  },
+  "toolchains": {
+    "3136028522": {
+      "cppCompilerExecutable": "D:\\AS\\sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

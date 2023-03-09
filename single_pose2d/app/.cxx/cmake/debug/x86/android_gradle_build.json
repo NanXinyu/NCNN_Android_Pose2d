@@ -1,0 +1,64 @@
+{
+  "stringTable": {
+    "0": "D:/ml/single_pose2d/app/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android24 --gcc-toolchain=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dncnnbodypose_EXPORTS -isystem D:/ml/single_pose2d/app/src/main/jni/ncnn-20230223-android-vulkan/x86/include/ncnn -isystem D:/ml/single_pose2d/app/src/main/jni/opencv-mobile-4.6.0-android/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -fno-rtti -fno-exceptions -std=gnu++11"
+  },
+  "buildFiles": [
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86\\OpenCVModules-release.cmake",
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\platforms.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\glslang\\glslang-config.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\glslang\\glslang-config-version.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\glslang\\glslang-targets.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\glslang\\glslang-targets-release.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86\\OpenCVConfig.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86\\OpenCVModules.cmake",
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\android.toolchain.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig-version.cmake",
+    "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ml\\single_pose2d\\app\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ml\\single_pose2d\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "ncnnbodypose-Debug-x86": {
+      "buildCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ml\\single_pose2d\\app\\.cxx\\cmake\\debug\\x86\" ncnnbodypose",
+      "buildType": "debug",
+      "toolchain": "3136028522",
+      "abi": "x86",
+      "artifactName": "ncnnbodypose",
+      "files": [
+        {
+          "src": "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\posedetncnn.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\posedet.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\ml\\single_pose2d\\app\\src\\main\\jni\\ndkcamera.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\ml\\single_pose2d\\app\\.cxx\\cmake\\debug\\x86\\libncnnbodypose.so"
+    }
+  },
+  "toolchains": {
+    "3136028522": {
+      "cppCompilerExecutable": "D:\\AS\\sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

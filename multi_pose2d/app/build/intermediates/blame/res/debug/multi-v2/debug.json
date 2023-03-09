@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ncnn_pose2d\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\ncnn_pose2d\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,3,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,109,-1",
+                        "endLines": "-1,6,-1",
+                        "endColumns": "-1,19,-1",
+                        "endOffsets": "-1,237,-1"
+                    },
+                    "to": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,164,294",
+                        "endLines": "5,9,10",
+                        "endColumns": "19,19,50",
+                        "endOffsets": "159,289,340"
+                    }
+                }
+            ]
+        }
+    ]
+}

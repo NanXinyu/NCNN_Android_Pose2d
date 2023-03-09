@@ -1,0 +1,8 @@
+# ninja log v5
+0	1030	699892059	CMakeFiles/ncnnbodypose.dir/posedet.cpp.o	fe1caa6c5b4b3d1b
+10	1109	699892059	CMakeFiles/ncnnbodypose.dir/ndkcamera.cpp.o	48f9a19e6fbd5520
+2	833	699892283	CMakeFiles/ncnnbodypose.dir/posedetncnn.cpp.o	e7421a17b1c14bb
+834	1039	699892283	libncnnbodypose.so	a26d364d24373740
+11	1154	699970576	CMakeFiles/ncnnbodypose.dir/posedetncnn.cpp.o	e7421a17b1c14bb
+4	1177	699970576	CMakeFiles/ncnnbodypose.dir/posedet.cpp.o	fe1caa6c5b4b3d1b
+1177	1683	699970576	libncnnbodypose.so	a26d364d24373740

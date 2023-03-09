@@ -1,0 +1,31 @@
+{
+  "buildFiles": [
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\platforms.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-config-version.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-targets.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnn.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVModules-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-targets-release.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\abi-x86_64\\OpenCVModules.cmake",
+    "D:\\AS\\sdk\\ndk\\22.0.7026061\\build\\cmake\\android.toolchain.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\opencv-mobile-4.6.0-android\\sdk\\native\\jni\\OpenCVConfig-version.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ncnn-20230223-android-vulkan\\x86_64\\lib\\cmake\\glslang\\glslang-config.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "ncnnbodypose-Debug-x86_64": {
+      "artifactName": "ncnnbodypose",
+      "buildCommand": "D:\\AS\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\" ncnnbodypose",
+      "abi": "x86_64",
+      "output": "D:\\ncnn_pose2d\\app\\.cxx\\cmake\\debug\\x86_64\\libncnnbodypose.so"
+    }
+  }
+}

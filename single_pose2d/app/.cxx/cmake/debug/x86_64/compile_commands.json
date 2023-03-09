@@ -1,0 +1,19 @@
+[
+{
+  "directory": "D:/ncnn_pose2d/app/.cxx/cmake/debug/x86_64",
+  "command": "D:\\AS\\sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --gcc-toolchain=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dncnnbodypose_EXPORTS -isystem D:/ncnn_pose2d/app/src/main/jni/ncnn-20230223-android-vulkan/x86_64/include/ncnn -isystem D:/ncnn_pose2d/app/src/main/jni/opencv-mobile-4.6.0-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\ncnnbodypose.dir\\posedetncnn.cpp.o -c D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedetncnn.cpp",
+  "file": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedetncnn.cpp"
+},
+
+{
+  "directory": "D:/ncnn_pose2d/app/.cxx/cmake/debug/x86_64",
+  "command": "D:\\AS\\sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --gcc-toolchain=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dncnnbodypose_EXPORTS -isystem D:/ncnn_pose2d/app/src/main/jni/ncnn-20230223-android-vulkan/x86_64/include/ncnn -isystem D:/ncnn_pose2d/app/src/main/jni/opencv-mobile-4.6.0-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\ncnnbodypose.dir\\posedet.cpp.o -c D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedet.cpp",
+  "file": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\posedet.cpp"
+},
+
+{
+  "directory": "D:/ncnn_pose2d/app/.cxx/cmake/debug/x86_64",
+  "command": "D:\\AS\\sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --gcc-toolchain=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AS/sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dncnnbodypose_EXPORTS -isystem D:/ncnn_pose2d/app/src/main/jni/ncnn-20230223-android-vulkan/x86_64/include/ncnn -isystem D:/ncnn_pose2d/app/src/main/jni/opencv-mobile-4.6.0-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\ncnnbodypose.dir\\ndkcamera.cpp.o -c D:\\ncnn_pose2d\\app\\src\\main\\jni\\ndkcamera.cpp",
+  "file": "D:\\ncnn_pose2d\\app\\src\\main\\jni\\ndkcamera.cpp"
+}
+]
